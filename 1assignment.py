@@ -9,31 +9,31 @@
 #         print(i)
 
 #Question2.
-# for num  in range(2,101):
-#     prime=True
-#     for i in range(2,num):
-#         if num%i==0:
-#             prime=False
-#             break
-#         else:
-#             print(num)
+for num  in range(2,101):
+     prime=True
+for i in range(2,num):
+       if num%i==0:
+           prime=False
+           break
+else:
+       print(num)
     
 #Question3.
-# score=int(input("Enter score:"))
-# if score>=90:
-#     print("grade A")
-# elif score>=80:
-#     print("Grade B")    
-# elif score>=70:
-#     print("Grade C")
-# elif score>=60:
-#     print("Grade D")
-# else:
-#     print("Grade F")
+score=int(input("Enter score:"))
+if score>=90:
+    print("grade A")
+elif score>=80:
+    print("Grade B")    
+elif score>=70:
+    print("Grade C")
+elif score>=60:
+     print("Grade D")
+else:
+     print("Grade F")
      
 #QUESTION4.
-# num=int(input("Enter number:"))
-# for i in range(1,11):  
+num=int(input("Enter number:"))
+for i in range(1,11):  
 #   print(num,"x",i,"=",num*i)
 
 #QUESTION5.
@@ -139,10 +139,82 @@
 #     print("*" *i)
 
 #QUESTION19 even number till given number
-n=int(input("enter number:"))
-for i in range(2,n+1,2):
-    print(i ,end=" ")
-
+# n=int(input("enter number:"))
+# for i in range(2,n+1,2):
+#     print(i ,end=" ")
 
 #QUESTION20  LIST OPERATIONS
+# numbers=[10,25,30,25,40,55,60,25,70,80]
 
+# #a. check whether 25 exists or not
+# if 25 in numbers:
+#     print("25 exists in the list")
+# # else:
+#     print("25 does not exist in the list")
+
+# #b.total length of the list
+# print("total length of list:",len(numbers)) 
+
+# #c. total occurence of 25
+# print("total occurence of 25:" , numbers.count(25))
+
+# #d. traverse each element
+# print("traverse of each element:")
+# for num in numbers:
+#     print(num)
+
+# #e. show all even number in the list
+# print("even number in the list:")
+# for num in numbers :
+#     if num % 2==0:
+#         print(num)
+
+#QUESTION21.  String operation
+
+# s=input("Enter string:")
+# words= s.split()
+# # a.
+# print("string:", s) 
+# print("length:",len(s))
+# # b.
+# if s==s[::-1]:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")    
+# # c.
+# print("Middle word:" , words[len(words)//2])
+# # d.
+# print("Second last word:", words[-2])
+
+#QUESTION22
+# print("Welcome to Calci:")
+# print("1. Power")
+# print("2. Sum")
+# print("3. Sub")
+# print("4. Multiple")
+
+# choice = int(input("Enter choice: "))
+
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+
+# if choice == 1:
+#     print(a ** b)
+# elif choice == 2:
+#     print(a + b)
+# elif choice == 3:
+#     print(a - b)
+# elif choice == 4:
+#     print(a * b)
+# else:
+#     print("Invalid choice")
+
+# QUESTION23.
+X = ['abc', 'xyz', 'aba', '1221']
+count = 0
+
+for s in X:
+    if len(s) >= 2 and s[0] == s[-1]:
+        count += 1
+
+print(count)    
