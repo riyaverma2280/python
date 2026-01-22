@@ -1,36 +1,36 @@
 # program to get a string made of the first 2 and the last 2 chars from a given a string.If a length is less than 2 , return 'not valid string, instead of the empty string
-def first_last_two(s):
-    if len<2:
-        return "not a valid string"
-    return s[:2]+s[-2:]    #slicing  2 for first two ,-2 for last two
+s = "Coder roots"
 
-
+if len(s) < 2:
+    print("not a valid string")
+else:
+    result = s[:2] + s[-2:]  #slicing
+    print(result)
 # Question2. swaping between two strings
 
-def swap_first_two(a,b):
-    new_a = b[:2] + a[2:]
-    new_b = a[:2] + b[2:]
-    return new_a+ " " +  new_b
+s1 = "coder"
+s2 = "roots"
+
+new_s1 = s2[0] + s1[1:]
+new_s2 = s1[0] + s2[1:]
+
+print(new_s1 + " " + new_s2)
 
 
-#Question3.
-def add_ing_or_ly(s):  
-    if len(s)<3:
-        return s
-    elif s.endswith("ing"):
-        return s+"ly"
-    else:
-        return s+"ing" 
+# #Question3.
+s = "string"
+
+if len(s) < 3:
+    print(s)
+elif s.endswith("ing"):
+    print(s + "ly")
+else:
+    print(s + "ing")
      
 
-#Question4.    remove the nth index character from a non empty string
-def remove_nth_char(s,n):   #n is index to remove
-    if n<0 or n>= len(s):
-        return "index out of range"
-    return s[:n]+s[n+1:]
+# #Question4.    remove the nth index character from a non empty string
+s="python"
+n=2
 
-#example
-string="python"
-index = 4
-result = remove_nth_char(string,index)
-print(result) 
+result=s[:n]+s[n+1:]
+print(result)
