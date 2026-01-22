@@ -82,15 +82,32 @@
 
 # QUESTION5.
 
-my_dict={'a':5, 'b':15, 'c':30, 'd':50, 'e':55}
-filter_dict={k:v for k, v in my_dict.items() if 10<= v <= 50}
-print(filter_dict)
+# my_dict={'a':5, 'b':15, 'c':30, 'd':50, 'e':55}
+# filter_dict={k:v for k, v in my_dict.items() if 10<= v <= 50}  #using list comprehension
+# print(filter_dict)
 
 #QUESTION6.
+# voter={}
+# n= int(input("Enter the number of voters:"))
+# for i in range(n):
+#     candidate=input("enter candidate name:")
+#     if candidate in voter:
+#         voter[candidate] += 1
+#     else:
+#         voter[candidate] = 1
+# print("\nvote count:")
+# print(voter)
 
+# winner= max(voter,key=voter.get)
+# print("\nwinner:",winner)
+# print("votes received:",voter[winner])
 
-
-
-
+#QUESTION7.
+data={'a':10,'b':20,'c':30}
+update={'b':200, 'c':300}
+for key in data:
+   if key in update:
+       data[key]= update[key]
+print(data)
 
 
